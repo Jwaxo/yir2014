@@ -1,0 +1,1710 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin-bottom: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  -webkit-touch-callout: none;
+}
+
+ul, menu, dir {
+  display: block;
+  padding: 0;
+  list-style-type: none;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+/*
+ * Utility classes
+ */
+.u-margin-center {
+  margin: 0 auto;
+}
+
+.u-text-align-center {
+  text-align: center;
+}
+
+.u-vertical-align-middle {
+  vertical-align: middle;
+}
+
+.u-vertical-align-bottom {
+  vertical-align: bottom;
+}
+
+.u-display-table {
+  display: table;
+}
+
+.u-display-table-row {
+  display: table-row;
+}
+
+.u-display-table-cell {
+  display: table-cell;
+}
+
+.u-display-inline-block {
+  display: inline-block;
+}
+
+.u-display-none {
+  display: none;
+}
+
+.u-noScroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+/*
+ * Main Navigation area
+ */
+.Navigation.Navigation--yir2014 {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  box-sizing: border-box;
+  color: #F5F8FA;
+  z-index: 15;
+  background-color: #292f33;
+}
+
+.Navigation.Navigation--yir2014 nav {
+  height: 100%;
+  width: 100%;
+  display: table;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+.Navigation-subsection--logo a,
+.Navigation-subsection--menu {
+  height: 28px;
+}
+
+.Navigation-subsection--logo {
+  position: relative;
+  z-index: 999;
+  text-align: left;
+  font-size: 28px;
+}
+.Navigation-subsection--logo a {
+  letter-spacing: 0.2em;
+  line-height: 34px;
+}
+.Navigation-subsection--logo a span {
+  color: transparent;
+  background-image: url("https://g.twimg.com/yir2014/img/Twitter_logo_blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.2em;
+}
+
+html[dir=rtl] .Navigation-subsection--logo {
+  text-align: right;
+}
+
+.Navigation-subsection--menu {
+  text-align: center;
+}
+.Navigation-subsection--menu .Navigation-item {
+  height: 100%;
+  position: relative;
+}
+.Navigation-subsection--menu.Mainnav {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.Navigation-item .Mainnav-menu {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.Navigation-item .Mainnav-menu ul {
+  display: none;
+  margin: 0 auto;
+  padding: 1em;
+  min-width: 250px;
+  max-width: 600px;
+  text-align: left;
+  background-color: #e1e8ed;
+  color: #292f33;
+}
+.Navigation-item .Mainnav-menu ul:hover {
+  display: inline-block;
+}
+.Navigation-item .Mainnav-menu ul.viz {
+  display: inline-block;
+}
+.Navigation-item .Mainnav-menu ul li {
+  cursor: pointer;
+  border-top: 1px solid #ccd6dd;
+  width: 250px;
+}
+.Navigation-item .Mainnav-menu ul li.country {
+  display: none;
+}
+.Navigation-item .Mainnav-menu ul li.country.active-country {
+  display: block;
+}
+.Navigation-item .Mainnav-menu ul li:first-child {
+  border-top: none;
+}
+.Navigation-item .Mainnav-menu ul li:hover, .Navigation-item .Mainnav-menu ul li:active {
+  background-color: #ccd6dd;
+}
+.Navigation-item .Mainnav-menu ul li a {
+  padding: 0.5em 0.75em;
+  color: #292f33;
+}
+.Navigation-item .Mainnav-menu ul.Contentnav--perspectives {
+  width: 420px;
+  box-sizing: initial;
+}
+.Navigation-item .Mainnav-menu ul.Contentnav--perspectives li {
+  width: 200px;
+  display: inline-block;
+  /* just for IE8 */
+  margin: 0 5px;
+  /* undoes IE8 style above in favor of nth-of-types */
+}
+.Navigation-item .Mainnav-menu ul.Contentnav--perspectives li:nth-of-type(odd) {
+  margin: 0 20px 0 0;
+}
+.Navigation-item .Mainnav-menu ul.Contentnav--perspectives li:nth-of-type(even) {
+  margin: 0;
+}
+.Navigation-item .Mainnav-menu ul.Contentnav--perspectives li:first-child, .Navigation-item .Mainnav-menu ul.Contentnav--perspectives li:first-child + li {
+  border-top: none;
+}
+.Navigation-item .Mainnav-indicator {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  max-width: 200px;
+  transition-property: box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+.Navigation-item .Mainnav-indicator:hover, .Navigation-item .Mainnav-indicator.viz, .Navigation-item .Mainnav-indicator.active {
+  box-shadow: inset 0px -5px 0px 0px #55ACEE;
+}
+.Navigation-item .Mainnav-indicator.temp-inactive {
+  box-shadow: inset 0px -5px 0px 0px #292f33;
+}
+.Navigation-item .Mainnav-indicator:hover + .Mainnav-menu ul {
+  display: inline-block;
+}
+.Navigation-item .Mainnav-indicator a {
+  position: relative;
+  display: block;
+  color: #F5F8FA;
+  height: 100%;
+  font-size: 16px;
+  line-height: 64px;
+}
+.Navigation-item .Mainnav-indicator a span:first-child {
+  position: relative;
+  left: 0.25em;
+}
+
+html[dir=rtl] .Navigation-item .Mainnav-menu ul {
+  text-align: right;
+}
+
+.Subnav {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  background-color: #e1e8ed;
+  color: #292f33;
+  box-sizing: border-box;
+  padding: 80px 1em 1em;
+  height: 100%;
+  z-index: 10;
+}
+.Subnav ul > li.Subnav-link {
+  margin-top: 1em;
+}
+.Subnav ul > li.Subnav-link a {
+  display: block;
+  padding: 0.75em 0.5em;
+  font-size: 16px;
+  color: #f5f8fa;
+}
+.Subnav ul > li.Subnav-link a:link,
+.Subnav ul > li.Subnav-link a:visited {
+  color: #292f33;
+}
+.Subnav ul > li.Subnav-link a:hover,
+.Subnav ul > li.Subnav-link a:active,
+.Subnav ul > li.Subnav-link a.active {
+  background-color: #ccd6dd;
+}
+.Subnav ul > li.Subnav-link:first-child {
+  margin-top: 0;
+}
+
+.Subnav-signin {
+  height: auto;
+}
+.Subnav-signin div {
+  margin-top: 2em;
+  padding: 2em;
+  border-top: 1px solid #ccd6dd;
+}
+.Subnav-signin div p {
+  color: #292f33;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+.Subnav-signin div a.Button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0.75em 0.5em;
+  line-height: 26px;
+  color: #f5f8fa;
+  background-color: #55ACEE;
+  border: none;
+}
+.Subnav-signin div.logged-in img {
+  border-radius: 5px;
+  border: 3px solid #8899a6;
+}
+.Subnav-signin div.logged-in p {
+  font-weight: 600;
+}
+
+.Navigation-subsection--signin {
+  position: relative;
+  z-index: 999;
+  text-align: right;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child {
+  height: 64px;
+  display: inline-block;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child:hover > .NavigationItem-link {
+  box-shadow: inset 0px -5px 0px 0px #55ACEE;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child:hover .Navigation--sub {
+  display: block;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child > .NavigationItem-link {
+  height: 56px;
+  padding: 8px;
+  box-sizing: border-box;
+  top: 8px;
+  position: relative;
+  transition-property: box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child > .NavigationItem-link img {
+  display: inline-block;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child .Navigation--sub {
+  right: 0;
+  height: auto;
+  top: 64px;
+  color: #292f33;
+  background-color: #e1e8ed;
+  padding: 1em;
+  border-radius: 0;
+  box-shadow: none;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child .Navigation--sub:hover {
+  display: block;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child .Navigation--sub:hover > .NavigationItem-link {
+  background-color: #e1e8ed;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child .Navigation--sub .NavigationItem.NavigationItem--sub {
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  border-top: 1px solid #ccd6dd;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child .Navigation--sub .NavigationItem.NavigationItem--sub:first-child {
+  border-top: none;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child .Navigation--sub .NavigationItem.NavigationItem--sub > .NavigationItem-link {
+  color: #292f33;
+  border-radius: 0;
+  font-size: 14px;
+  width: 100%;
+  padding: 0;
+  min-width: 150px;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child .Navigation--sub .NavigationItem.NavigationItem--sub:hover {
+  background-color: #ccd6dd;
+}
+.Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child .Navigation--sub .NavigationItem.NavigationItem--sub:hover > .NavigationItem-link {
+  background-color: transparent;
+}
+.Navigation-subsection--signin .NavigationItem {
+  font-size: 14px;
+  background-color: transparent;
+}
+.Navigation-subsection--signin .NavigationItem:after {
+  display: none;
+}
+
+html[dir=rtl] .Navigation-subsection--signin {
+  text-align: left;
+}
+html[dir=rtl] .Navigation-subsection--signin .NavigationItem.NavigationItem--user.NavigationItem--withChildren:last-child .Navigation--sub {
+  left: 0;
+  right: auto;
+}
+
+.Navigation .Navigation-subsection--share {
+  display: none;
+  position: relative;
+  width: 10%;
+  z-index: 110;
+}
+.Navigation .Navigation-subsection--share .CTA--share {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.66em;
+  margin-left: 0.4em;
+  float: right;
+  background-size: cover;
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_button_share.png");
+  background-repeat: no-repeat;
+}
+
+.Navigation .Navigation-subsection--logo,
+.Navigation .Navigation-subsection--signin {
+  width: 25%;
+}
+.Navigation .Navigation-subsection--logo a,
+.Navigation .Navigation-subsection--signin a {
+  display: inline-block;
+}
+.Navigation .Navigation-subsection--logo a:link, .Navigation .Navigation-subsection--logo a:visited, .Navigation .Navigation-subsection--logo a:hover, .Navigation .Navigation-subsection--logo a:active,
+.Navigation .Navigation-subsection--signin a:link,
+.Navigation .Navigation-subsection--signin a:visited,
+.Navigation .Navigation-subsection--signin a:hover,
+.Navigation .Navigation-subsection--signin a:active {
+  color: #F5F8FA;
+}
+
+.Navigation .Navigation-subsection--signin a:hover,
+.Navigation .Navigation-subsection--signin a:active {
+  color: #55ACEE;
+}
+
+.Navigation-subsection--menu .Navigation-item .Mainnav-submenu {
+  display: none;
+}
+
+.Container--header {
+  position: fixed;
+  width: 100%;
+  background-color: #031528;
+  z-index: 3;
+}
+
+.Container--header:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 1;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.Header--wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+  color: white;
+}
+
+.Header--vit-name a:link, .Header--vit-name a:hover {
+  color: white;
+}
+
+.Header--navwrapper {
+  position: relative;
+}
+
+.Header--navigation {
+  display: none !important;
+  /* temp */
+  width: 1.43em;
+  height: 1.05em;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5025em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Header--navigation.Forward {
+  right: 2em;
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_button_forward.png");
+}
+.Header--navigation.Back {
+  left: 2em;
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_button_back.png");
+}
+
+html[dir=rtl] .Header--navigation.Forward {
+  left: 2em;
+  right: auto;
+  transform: rotateY(180deg);
+}
+html[dir=rtl] .Header--navigation.Back {
+  right: 2em;
+  left: auto;
+  transform: rotateY(180deg);
+}
+
+.Header--wrapper .collapsible {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 150ms linear, opacity 150ms linear, height 150ms linear;
+}
+.Header--wrapper .collapsible.u-noTransition {
+  transition: none;
+}
+.Header--wrapper.mini .collapsible {
+  transform: scale(0);
+  opacity: 0;
+  height: 0;
+}
+.Header--wrapper.mini .Header--vit-photo {
+  margin: 0 auto;
+}
+.Header--wrapper .Pageheader--nav li {
+  display: none;
+}
+.Header--wrapper .Pageheader--nav li.active {
+  display: inline-block;
+}
+.Header--wrapper .Pageheader--nav li h1 {
+  position: relative;
+  z-index: 2;
+  line-height: 2.5em;
+  transition: line-height 0.1s ease-in-out;
+}
+
+.Pageheader--nav-CTA--share.CTA--share {
+  display: inline-block;
+  width: 0.72em;
+  height: 0.84em;
+  margin-left: 0.4em;
+  cursor: pointer;
+  background-size: cover;
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_button_share.png");
+  background-repeat: no-repeat;
+}
+
+.Pageheader--mobilenav {
+  display: none;
+}
+.Pageheader--mobilenav li.country {
+  display: none;
+}
+.Pageheader--mobilenav li.active-country {
+  display: block;
+}
+
+.Header--description {
+  position: relative;
+  width: 70%;
+  padding: 0 0 1.5em;
+  margin: 0 auto;
+}
+
+@media (min-width: 901px) {
+  .Footer-content-languages {
+    display: inline-block;
+  }
+}
+@media (min-width: 601px) {
+  .Mainnav-indicator.homepageIndicator {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .Header--description {
+    width: 90%;
+  }
+
+  .Navigation-subsection--logo {
+    font-size: 26px;
+  }
+  .Navigation-subsection--logo a {
+    line-height: 30px;
+  }
+
+  .Navigation-subsection--menu.active .Navigation-item {
+    box-shadow: inset 0px -5px 0px 0px #55ACEE;
+  }
+  .Navigation-subsection--menu .Navigation-item {
+    max-width: 200px;
+    margin: 0 auto;
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: static;
+  }
+  .Navigation-subsection--menu .Navigation-item .Mainnav-menu {
+    display: none;
+  }
+  .Navigation-subsection--menu .Navigation-item .Mainnav-indicator {
+    display: none;
+    vertical-align: middle;
+    width: 50%;
+    cursor: pointer;
+  }
+  .Navigation-subsection--menu .Navigation-item .Mainnav-indicator:hover, .Navigation-subsection--menu .Navigation-item .Mainnav-indicator:active {
+    border-bottom: none;
+    top: 0;
+  }
+  .Navigation-subsection--menu .Navigation-item .Mainnav-indicator.viz, .Navigation-subsection--menu .Navigation-item .Mainnav-indicator.active {
+    box-shadow: none;
+  }
+  .Navigation-subsection--menu .Navigation-item .Mainnav-indicator.viz {
+    display: table-row;
+  }
+  .Navigation-subsection--menu .Navigation-item .Mainnav-indicator.viz a {
+    top: 0;
+  }
+  .Navigation-subsection--menu .Navigation-item .Mainnav-indicator a {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #F5F8FA;
+    height: 3.55em;
+    position: relative;
+    line-height: 34px;
+  }
+  .Navigation-subsection--menu .Navigation-item .Mainnav-indicator a span {
+    display: inline-block;
+  }
+  .Navigation-subsection--menu .Navigation-item .Mainnav-indicator a span.arrow {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid #F5F8FA;
+    position: relative;
+    top: -2px;
+    margin-left: 0.5em;
+  }
+
+  .Subnav.viz {
+    display: block;
+  }
+
+  .Header--navwrapper {
+    padding: 0;
+  }
+
+  .Pageheader--nav li {
+    padding: 1em;
+    cursor: pointer;
+    user-select: none;
+  }
+  .Pageheader--nav li.active {
+    display: inline-block;
+  }
+
+  .Pageheader--nav h1 {
+    font-size: 1.3em;
+    margin-bottom: 0;
+  }
+  .Pageheader--nav h1 span {
+    display: inline-block;
+  }
+  .Pageheader--nav h1 span:last-of-type {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid #F5F8FA;
+    position: relative;
+    top: -2px;
+    margin-left: 0.5em;
+  }
+
+  .Pageheader--mobilenav {
+    position: fixed;
+    top: 137px;
+    bottom: 0;
+    z-index: 999;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #292f33;
+    box-sizing: border-box;
+  }
+  .Pageheader--mobilenav.viz {
+    display: block;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: #e1e8ed;
+  }
+  .Pageheader--mobilenav ul {
+    background-color: #e1e8ed;
+    padding: 1em;
+  }
+  .Pageheader--mobilenav ul > li {
+    margin-top: 1em;
+  }
+  .Pageheader--mobilenav ul > li a {
+    display: block;
+    padding: 0.75em 0.5em;
+    font-size: 16px;
+    line-height: 16px;
+    color: #f5f8fa;
+  }
+  .Pageheader--mobilenav ul > li a:link,
+  .Pageheader--mobilenav ul > li a:visited {
+    color: #292f33;
+  }
+  .Pageheader--mobilenav ul > li a:hover,
+  .Pageheader--mobilenav ul > li a:active {
+    background-color: #ccd6dd;
+  }
+  .Pageheader--mobilenav ul > li:first-child {
+    margin-top: 0;
+  }
+
+  .Header--description {
+    padding: 1.5em 0 1.5em;
+  }
+
+  .Pageheader--nav-CTA--share.CTA--share {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .Navigation nav {
+    padding: 0 1em;
+  }
+
+  .Navigation-subsection--logo {
+    width: 25%;
+    font-size: 20px;
+  }
+  .Navigation-subsection--logo a {
+    line-height: 24px;
+  }
+
+  .Navigation-subsection--signin {
+    display: none;
+  }
+  .Navigation-subsection--signin a {
+    line-height: 30px;
+  }
+}
+.Prompt {
+  opacity: 0.75;
+  position: absolute;
+  top: 200px;
+  width: 98%;
+  z-index: 10;
+}
+
+/*
+ * Main Content Area
+ */
+#main-content {
+  padding-top: 64px;
+}
+
+/*
+ * Footer area
+ */
+.Footer-container {
+  width: 100%;
+  padding: 1.7em 2.1em 2.7em;
+  box-sizing: border-box;
+  background-color: #292F33;
+  position: relative;
+  z-index: 3;
+}
+
+.Footer-container-content {
+  box-sizing: border-box;
+  color: #F5F8FA;
+}
+
+.Footer-container-content li a {
+  color: #F5F8FA;
+  font-size: 1em;
+}
+
+.Footer-container-content a:hover {
+  color: #55ACEE;
+}
+
+.Footer-content-share.CTA--share {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-left: 0.4em;
+  background-image: none;
+}
+.Footer-content-share.CTA--share img {
+  vertical-align: baseline;
+  height: 1em;
+}
+
+.Footer-content-pastyears,
+.Footer-content-share {
+  display: block;
+  float: left;
+  margin-right: 3em;
+}
+
+.Footer-container-content .Footer-right {
+  float: right;
+}
+
+.Footer-content-get-app {
+  margin-right: 2em;
+}
+
+.Footer-container-content > li {
+  padding: 5px 0;
+}
+
+.Footer-container-content > li.Footer-content-get-app {
+  padding: 0;
+}
+
+html[dir=rtl] .Footer-content-share.CTA--share {
+  margin-right: 0.4em;
+}
+html[dir=rtl] .Footer-content-pastyears,
+html[dir=rtl] .Footer-content-share {
+  float: right;
+  margin-left: 3em;
+}
+html[dir=rtl] .Footer-container-content .Footer-right {
+  float: left;
+}
+html[dir=rtl] .Footer-content-get-app {
+  margin-left: 2em;
+}
+
+li.Footer-content-copyright a {
+  color: #8899A6;
+  font-size: 0.85em;
+}
+
+@media (max-width: 900px) {
+  .Footer-container-content {
+    text-align: center;
+  }
+
+  .Footer-content-pastyears,
+  .Footer-content-share {
+    float: none;
+  }
+
+  .Footer-container-content .Footer-right {
+    float: none;
+  }
+
+  .Footer-content-get-app,
+  .Footer-content-copyright,
+  .Footer-content-pastyears,
+  .Footer-content-share {
+    display: inline-block;
+  }
+
+  .Footer-content-pastyears {
+    margin-right: 1.5em;
+  }
+
+  .Footer-content-share {
+    margin-right: 0em;
+  }
+
+  .Footer-content-copyright {
+    margin-top: 1em;
+  }
+
+  .Footer-content-get-app {
+    margin-right: 0;
+    margin-left: 1.5em;
+  }
+
+  .Footer-container-content > li {
+    padding: 0;
+  }
+
+  .Navigation .Navigation-subsection--share {
+    display: table-cell;
+  }
+
+  .Navigation-subsection--signin {
+    display: none;
+  }
+
+  html[dir=rtl] .Footer-content-pastyears {
+    margin-left: 1.5em;
+  }
+  html[dir=rtl] .Footer-content-share {
+    margin-left: 0em;
+  }
+  html[dir=rtl] .Footer-content-pastyears,
+  html[dir=rtl] .Footer-content-share {
+    float: none;
+  }
+  html[dir=rtl] .Footer-container-content .Footer-right {
+    float: none;
+  }
+  html[dir=rtl] .Footer-content-get-app {
+    margin-left: 0;
+    margin-right: 1.5em;
+  }
+}
+
+.Yir2014--timeline-header {
+  position: fixed;
+  overflow: hidden;
+  background-color: #000;
+  z-index: 5;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: table;
+}
+.Yir2014--timeline-header .TimelineHead--detail {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.Yir2014--timeline-header .TimelineHead--detail-img {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+.Yir2014--timeline-header .TimelineHead--detail-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+@media (min-width: 601px) {
+  .TimelineHead--detail-img img {
+    filter: blur(5px);
+  }
+
+  .Yir2014--moments-category {
+    background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars.png");
+    background-size: 100% auto;
+  }
+}
+.TimelineHead--detail-hashtag {
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.TimelineHead--detail-hashtag h1 {
+  line-height: 124px;
+  color: white;
+}
+.TimelineHead--detail-hashtag .TimelineHead--detail-hashtag-description {
+  position: relative;
+  width: 70%;
+  padding: 0 0 1.5em;
+  margin: 0 auto;
+  color: #FFF;
+}
+
+.Yir2014--moments-category {
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars_gray_mobile.png");
+  background-position: center;
+}
+
+.Yir2014--timeline-content {
+  text-align: center;
+  margin: 0;
+  padding: 210px 5% 3em;
+}
+
+@media (max-width: 600px) {
+  .Yir2014--timeline-content {
+    padding-top: 250px;
+  }
+}
+.Yir2014--timeline-footer {
+  padding: 0 2em 4em;
+  text-align: center;
+  color: #292f33;
+  margin: 0;
+}
+.Yir2014--timeline-footer a {
+  color: #55acee;
+}
+.Yir2014--timeline-footer .Button.Button--blue {
+  margin-top: 18px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+.Yir2014--timeline-footer .fa {
+  font-size: 28px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+html[dir=rtl] .Yir2014--timeline-footer .fa {
+  margin-left: 0;
+  margin-right: 8px;
+  transform: rotate(180deg);
+  vertical-align: top;
+}
+
+.Yir2014--moments-tweet {
+  height: 100%;
+  padding-top: 1em;
+  margin: 0;
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars_gray_mobile.png");
+  background-position: center;
+}
+.Yir2014--moments-tweet iframe {
+  margin: 50px auto !important;
+  max-width: 500px !important;
+  width: 100% !important;
+}
+
+@media screen and (min-width: 600px) {
+  .Yir2014--moments-tweet {
+    background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars.png");
+  }
+}
+.Yir2014--moments-tweet {
+  height: 100%;
+  padding-top: 1em;
+  margin: 0;
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars_gray_mobile.png");
+  background-position: center;
+}
+.Yir2014--moments-tweet iframe {
+  margin: 50px auto !important;
+  max-width: 500px !important;
+  width: 100% !important;
+}
+
+@media screen and (min-width: 600px) {
+  .Yir2014--moments-tweet {
+    background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars.png");
+  }
+}
+.Yir2014--perspectives {
+  background-color: #f5f8fa;
+}
+
+.Header--vit-name {
+  display: none;
+}
+
+.Header--vit-photo {
+  width: 7.625em;
+  height: 7.625em;
+  margin: 0 auto 1.5em;
+  padding: 0.3em;
+  border-radius: 0.5em;
+  background-color: white;
+}
+.Header--vit-photo img {
+  width: 100%;
+  border-radius: 0.3em;
+}
+
+.Header--wrapper.mini .Header--vit {
+  display: none;
+}
+
+.Subheader--vit .Header--description {
+  padding: 0;
+}
+.Subheader--vit .twitter-follow-button {
+  margin: 1em auto;
+}
+
+.Yir2014--perspectives-subnav {
+  width: 100%;
+  padding-top: 260px;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.PerspectivesHead--subnav {
+  border-bottom: 1px solid #ccd6dd;
+  background-color: #f5f8fa;
+}
+
+.PerspectivesSubnav--vit {
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.PerspectivesSubnav--vit li {
+  display: inline-block;
+  width: 250px;
+  padding-top: 0.65em;
+  padding-bottom: 0.65em;
+  font-size: 1.2em;
+  color: #55ACEE;
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+}
+.PerspectivesSubnav--vit li.active {
+  box-shadow: inset 0px -5px 0 0 #55ACEE;
+  color: #373b3d;
+  font-weight: 600;
+}
+
+.Yir2014--perspectives-subcontent {
+  position: relative;
+  z-index: -1;
+  text-align: center;
+  min-width: 500px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.PerspectivesContent--top5.hidden,
+.PerspectivesContent--5tofollow.hidden,
+.PerspectivesHead--subnav.hidden {
+  display: none;
+}
+
+.PerspectivesContent--top5 {
+  padding-top: 260px;
+}
+
+.PerspectivesContent--5tofollow {
+  padding-top: 230px;
+}
+
+.PerspectivesContent--top5,
+.PerspectivesContent--5tofollow {
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars_gray_mobile.png");
+  background-position: center bottom;
+  background-size: 100% auto;
+}
+
+.PerspectivesHead--subnav.TopFiveMenu {
+  padding: 0.7em 0;
+  text-align: center;
+  direction: ltr;
+}
+.PerspectivesHead--subnav.TopFiveMenu ul {
+  display: table;
+  margin: 0 auto;
+}
+.PerspectivesHead--subnav.TopFiveMenu ul li {
+  display: table-cell;
+  padding: 0 0.5em;
+}
+.PerspectivesHead--subnav.TopFiveMenu ul li a {
+  display: table-cell;
+  vertical-align: middle;
+  width: 2em;
+  height: 2em;
+  line-height: 1em;
+  background-color: #55ACEE;
+  color: #f5f8fa;
+  border-radius: 50px;
+}
+.PerspectivesHead--subnav.TopFiveMenu ul li a:hover {
+  background-color: #CCC;
+}
+
+.PerspectivesContent--top5-tweets {
+  width: 90%;
+  margin: 0 auto 3em;
+}
+.PerspectivesContent--top5-tweets .tweet-anchor {
+  display: block;
+  position: relative;
+  top: -260px;
+}
+.PerspectivesContent--top5-tweets .tweet-anchor#tweet1 {
+  top: -360px;
+}
+.PerspectivesContent--top5-tweets li iframe {
+  margin: 1.5em auto 4em !important;
+}
+
+body.admin-menu .PerspectivesContent--top5-tweets .tweet-anchor {
+  top: -290px;
+}
+body.admin-menu .PerspectivesContent--top5-tweets .tweet-anchor#tweet1 {
+  top: -390px;
+}
+
+@media (min-width: 601px) {
+  .PerspectivesContent--top5-tweets .tweet-anchor,
+  .PerspectivesContent--top5-tweets .tweet-anchor#tweet1 {
+    top: -190px;
+  }
+
+  body.admin-menu .PerspectivesContent--top5-tweets .tweet-anchor,
+  body.admin-menu .PerspectivesContent--top5-tweets .tweet-anchor#tweet1 {
+    top: -220px;
+  }
+}
+.PerspectivesContent--5tofollow-list {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.PerspectivesContent--top5-footer,
+.PerspectivesContent--5tofollow-footer {
+  padding: 0 2em 4em;
+  text-align: center;
+  color: #292f33;
+  margin: 0;
+}
+.PerspectivesContent--top5-footer a,
+.PerspectivesContent--5tofollow-footer a {
+  color: #55acee;
+}
+.PerspectivesContent--top5-footer .Button.Button--blue,
+.PerspectivesContent--5tofollow-footer .Button.Button--blue {
+  margin-top: 18px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+.PerspectivesContent--top5-footer .fa,
+.PerspectivesContent--5tofollow-footer .fa {
+  font-size: 28px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+html[dir=rtl] .PerspectivesContent--top5-footer .fa,
+html[dir=rtl] .PerspectivesContent--5tofollow-footer .fa {
+  margin-left: 0;
+  margin-right: 8px;
+  transform: rotate(180deg);
+  vertical-align: top;
+}
+
+.PerspectivesContent--5tofollow-list {
+  margin: 0 auto 3em;
+  border-radius: 4px;
+  border: 1px solid #ccd6dd;
+}
+.PerspectivesContent--5tofollow-list li {
+  padding: 1.75em;
+  box-sizing: border-box;
+  border-top: 1px solid #ccd6dd;
+  background-color: white;
+}
+.PerspectivesContent--5tofollow-list li:first-child {
+  border-top: none;
+}
+.PerspectivesContent--5tofollow-list .tweeter-info {
+  margin-left: 78px;
+}
+.PerspectivesContent--5tofollow-list .tweeter-info .avatar {
+  float: left;
+  margin-left: -78px;
+  width: 58px;
+  height: 58px;
+  border: 1px solid #ccd6dd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.PerspectivesContent--5tofollow-list .tweeter-info .avatar img {
+  width: 100%;
+}
+.PerspectivesContent--5tofollow-list .tweeter-info .tweeter {
+  float: left;
+}
+.PerspectivesContent--5tofollow-list .tweeter-info .tweeter h6 {
+  font-weight: 800;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+.PerspectivesContent--5tofollow-list .tweeter-info .tweeter p {
+  margin: 0;
+  color: #8899a6;
+}
+.PerspectivesContent--5tofollow-list .tweeter-info .follow {
+  float: right;
+}
+.PerspectivesContent--5tofollow-list .tweeter-info .description {
+  clear: both;
+}
+.PerspectivesContent--5tofollow-list .tweeter-info .description p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.Header--vit {
+  margin: 15px auto;
+  max-width: 500px;
+  min-height: 120px;
+  text-align: left;
+}
+.Header--vit .Header--vit-photo {
+  float: left;
+  margin: 7px 20px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.Header--vit .twitter-follow-button {
+  margin: 10px 0 0;
+}
+.Header--vit .Header--description {
+  margin: 4px 0 0;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .PerspectivesContent--top5 {
+    padding-top: 280px;
+  }
+
+  .PerspectivesContent--5tofollow {
+    padding-top: 260px;
+  }
+
+  .Yir2014--perspectives .Pageheader--nav {
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+  }
+
+  .Header--vit {
+    min-height: 73px;
+    padding: 0 15px;
+  }
+  .Header--vit .Header--vit-name {
+    display: none;
+  }
+  .Header--vit .Header--vit-photo {
+    margin-top: 3px;
+    margin-right: 15px;
+    width: 64px;
+    height: 64px;
+  }
+  .Header--vit .Header--description {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 601px) {
+  .node-type-vit .Pageheader--nav {
+    display: none;
+  }
+
+  .Header--vit .Header--vit-name {
+    display: block;
+  }
+
+  .PerspectivesContent--top5,
+  .PerspectivesContent--5tofollow {
+    background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars.png");
+  }
+
+  .PerspectivesContent--top5-tweets {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+.Yir2014--moments {
+  background-color: #f5f8fa;
+  box-sizing: initial;
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars.png");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.Yir2014--moments-content {
+  padding-top: 200px;
+  text-align: center;
+}
+.Yir2014--moments-content .twitter-timeline {
+  margin: 3em 0;
+}
+
+.Yir2014--moments-footer p {
+  background-color: #e1e8ed;
+  padding: 3em 2em;
+  text-align: center;
+  color: #292f33;
+  margin: 0;
+}
+.Yir2014--moments-footer p a {
+  color: #55acee;
+}
+
+.Container--header:after {
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_nav_header_min_starslines_purple.png");
+}
+
+.Yir2014--moments-timeline {
+  width: 100%;
+  height: 100%;
+  padding: 190px 2em 0;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .Yir2014--moments-timeline {
+    padding-top: 230px;
+  }
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Yir2014--moments-timeline-circles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Yir2014--moments-timeline-circles span {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: transparent;
+  border: 1px solid #DDD;
+  opacity: 0;
+  transform: scale(1);
+  border-radius: 300px;
+  transition: left 150ms ease-out, top 150ms ease-out, opacity 650ms ease-out, transform 650ms ease-out;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle {
+  position: absolute;
+  border-radius: 300px;
+  z-index: 2;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-color: #292f33;
+  box-shadow: 0px 0px 3px #292f33;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  transform: scale(1);
+  transition: left 150ms ease-out, top 150ms ease-out, opacity 400ms ease-out, transform 150ms ease-out;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.photo p {
+  display: none;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.hidden {
+  opacity: 0;
+  top: 100px;
+  transform: scale(0.4);
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.hasphoto .inner {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.hasphoto .inner p {
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle .Moment--circle-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle .Moment--circle-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 150%;
+  max-height: 150%;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle .content-container {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  font-weight: 200;
+  font-size: inherit;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle .content-container p {
+  line-height: 1.35;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  font-size: inherit;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.text {
+  font-size: 12px;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.text .content-container {
+  display: table-cell;
+  table-layout: fixed;
+  vertical-align: middle;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.text .content-container p {
+  margin: 0;
+  padding: 11%;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.text .content-container p strong {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.text .content-container p strong:after {
+  content: "\a";
+  white-space: pre;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.hashtag {
+  font-size: 14px;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.hashtag .content-container {
+  display: table-cell;
+  table-layout: fixed;
+  vertical-align: middle;
+  padding: 0 1em;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.hashtag .content-container p {
+  margin: 0;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.hashtag .content-container p strong {
+  font-weight: 400;
+  word-wrap: normal;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .entertainment {
+  background-color: #dd2e44;
+  border: 3px solid #dd2e44;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .news {
+  background-color: #77b255;
+  border: 3px solid #77b255;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .only_on_twitter {
+  background-color: #fa743e;
+  border: 3px solid #fa743e;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .sports {
+  background-color: #55acee;
+  border: 3px solid #55acee;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .politics {
+  background-color: #9266cc;
+  border: 3px solid #9266cc;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-1,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-1 .content-container,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size- .content-container {
+  width: 130px;
+  height: 130px;
+  font-size: 1.1em;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.month.size-2 {
+  background: none;
+  border: 1px solid rgba(221, 221, 221, 0.4);
+  box-shadow: none;
+  cursor: default;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .Moment--circle.month.size-2 .content-container {
+  color: #8b9ba8;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 158px;
+  text-transform: uppercase;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-2,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-2 .content-container {
+  width: 158px;
+  height: 158px;
+  font-size: 1.1em;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-3,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-3 .content-container {
+  width: 186px;
+  height: 186px;
+  font-size: 1.25em;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-4,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-4 .content-container {
+  width: 214px;
+  height: 214px;
+  font-size: 1.3em;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-5,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-5 .content-container {
+  width: 242px;
+  height: 242px;
+  font-size: 1.45em;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-6,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-6 .content-container {
+  width: 270px;
+  height: 270px;
+  font-size: 1.7em;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-7,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-7 .content-container {
+  width: 298px;
+  height: 298px;
+  font-size: 1.8em;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-8,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-8 .content-container {
+  width: 326px;
+  height: 326px;
+  font-size: 2.1em;
+}
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-9,
+.Yir2014--moments-timeline .Yir2014--moments-timeline-container .size-9 .content-container {
+  width: 354px;
+  height: 354px;
+  font-size: 2.1em;
+}
+
+@media all and (max-width: 600px) {
+  .Yir2014--moments {
+    background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars_gray_mobile.png");
+  }
+}
+
+.Yir2014--perspectives .Container--header:after {
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_nav_header_min_starslines_purple.png");
+}
+
+.Subheader--perspectives .Header--navigation {
+  display: none;
+}
+
+.Content--perspectives {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 17em;
+  background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars_gray_mobile.png");
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.Section--perspectives-container--vits {
+  margin: 0 auto;
+  padding: 1.5em 0;
+  width: 80%;
+  max-width: 608px;
+}
+
+.Container--user {
+  width: 40%;
+  margin: 0 1em;
+  vertical-align: top;
+  text-align: center;
+}
+
+.Container--user-container--profileImage {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 0.5em;
+  background-size: 100%;
+}
+
+.Container-profileImage {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.Container--user-profileDescription {
+  margin-top: 0.667em;
+  margin-bottom: 1.5em;
+  color: #292f33;
+  font-size: 0.85em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .Section--perspectives-container--vits {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Section--perspectives-container--vits {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .Content--perspectives {
+    background-image: url("https://g.twimg.com/yir2014/twitter_yot_background_stars.png");
+  }
+}
+html[dir=rtl] .Navigation-item .Mainnav-menu ul.Contentnav--perspectives {
+  text-align: left;
+  direction: ltr;
+}
+
+/**
+ * utility classes
+ */
+.u-inline-block {
+  display: inline-block;
+}
+
+.u-inline {
+  display: inline;
+}

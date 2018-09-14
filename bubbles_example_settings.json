@@ -1,0 +1,401 @@
+{
+  "basePath": "\/",
+  "pathPrefix": "",
+  "ajaxPageState": {
+    "theme": "canopy_yir2014",
+    "theme_token": "WwsLKS7emD7mVugw4Fnywcv3mS3OXuBnvQ26uthkcVg"
+  },
+  "vitPositions": {
+    "global": [
+      {
+        "id": "global-vit-position-0",
+        "name": "Lady Gaga"
+      },
+      {
+        "id": "global-vit-position-1",
+        "name": "Neymar Jr. "
+      },
+      {
+        "id": "global-vit-position-2",
+        "name": "Robert Downey Jr. "
+      },
+      {
+        "id": "global-vit-position-3",
+        "name": "JK Rowling"
+      },
+      {
+        "id": "global-vit-position-4",
+        "name": "Jared Leto"
+      },
+      {
+        "id": "global-vit-position-5",
+        "name": "Claudia Leitte"
+      },
+      {
+        "id": "global-vit-position-6",
+        "name": "Sachin Tendulkar"
+      },
+      {
+        "id": "global-vit-position-7",
+        "name": "Cheryl Fernandez-Versini"
+      },
+      {
+        "id": "global-vit-position-8",
+        "name": "Aaron Paul"
+      },
+      {
+        "id": "global-vit-position-9",
+        "name": "Tim Howard"
+      },
+      {
+        "id": "global-vit-position-10",
+        "name": "Eduardo Jorge"
+      },
+      {
+        "id": "global-vit-position-11",
+        "name": "Gary Lineker"
+      },
+      {
+        "id": "global-vit-position-12",
+        "name": "Glenda Kozlowsky"
+      },
+      {
+        "id": "global-vit-position-13",
+        "name": "Henry Winter"
+      },
+      {
+        "id": "global-vit-position-14",
+        "name": "The Duke of York"
+      },
+      {
+        "id": "global-vit-position-15",
+        "name": "Priyanka Chopra"
+      },
+      {
+        "id": "global-vit-position-16",
+        "name": "Amitabh Bachchan"
+      },
+      {
+        "id": "global-vit-position-17",
+        "name": "Shah Rukh Khan"
+      }
+    ],
+    "BR": [
+      {
+        "id": "brazil-vit-position-0",
+        "name": "Neymar Jr. "
+      },
+      {
+        "id": "brazil-vit-position-1",
+        "name": "Claudia Leitte"
+      },
+      {
+        "id": "brazil-vit-position-2",
+        "name": "Eduardo Jorge"
+      },
+      {
+        "id": "brazil-vit-position-3",
+        "name": "Glenda Kozlowsky"
+      },
+      {
+        "id": "brazil-vit-position-4",
+        "name": "Lady Gaga"
+      },
+      {
+        "id": "brazil-vit-position-5",
+        "name": "Robert Downey Jr. "
+      },
+      {
+        "id": "brazil-vit-position-6",
+        "name": "Tim Howard"
+      },
+      {
+        "id": "brazil-vit-position-7",
+        "name": "Jared Leto"
+      },
+      {
+        "id": "brazil-vit-position-8",
+        "name": "Aaron Paul"
+      },
+      {
+        "id": "brazil-vit-position-9",
+        "name": "JK Rowling"
+      },
+      {
+        "id": "brazil-vit-position-10",
+        "name": "Sachin Tendulkar"
+      },
+      {
+        "id": "brazil-vit-position-11",
+        "name": "Gary Lineker"
+      },
+      {
+        "id": "brazil-vit-position-12",
+        "name": "Cheryl Fernandez-Versini"
+      },
+      {
+        "id": "brazil-vit-position-13",
+        "name": "Henry Winter"
+      },
+      {
+        "id": "brazil-vit-position-14",
+        "name": "The Duke of York"
+      },
+      {
+        "id": "brazil-vit-position-15",
+        "name": "Priyanka Chopra"
+      },
+      {
+        "id": "brazil-vit-position-16",
+        "name": "Amitabh Bachchan"
+      },
+      {
+        "id": "brazil-vit-position-17",
+        "name": "Shah Rukh Khan"
+      }
+    ],
+    "IN": {
+      "0": {
+        "id": "india-vit-position-0",
+        "name": "Sachin Tendulkar"
+      },
+      "1": {
+        "id": "india-vit-position-1",
+        "name": "Amitabh Bachchan"
+      },
+      "2": {
+        "id": "india-vit-position-2",
+        "name": "Robert Downey Jr. "
+      },
+      "3": {
+        "id": "india-vit-position-3",
+        "name": "JK Rowling"
+      },
+      "4": {
+        "id": "india-vit-position-4",
+        "name": "Jared Leto"
+      },
+      "5": {
+        "id": "india-vit-position-5",
+        "name": "Claudia Leitte"
+      },
+      "6": {
+        "id": "india-vit-position-6",
+        "name": "Lady Gaga"
+      },
+      "7": {
+        "id": "india-vit-position-7",
+        "name": "Cheryl Fernandez-Versini"
+      },
+      "8": {
+        "id": "india-vit-position-8",
+        "name": "Aaron Paul"
+      },
+      "9": {
+        "id": "india-vit-position-9",
+        "name": "Tim Howard"
+      },
+      "10": {
+        "id": "india-vit-position-10",
+        "name": "Eduardo Jorge"
+      },
+      "11": {
+        "id": "india-vit-position-11",
+        "name": "Gary Lineker"
+      },
+      "12": {
+        "id": "india-vit-position-12",
+        "name": "Glenda Kozlowsky"
+      },
+      "13": {
+        "id": "india-vit-position-13",
+        "name": "Henry Winter"
+      },
+      "14": {
+        "id": "india-vit-position-14",
+        "name": "The Duke of York"
+      },
+      "15": {
+        "id": "india-vit-position-15",
+        "name": "Priyanka Chopra"
+      },
+      "17": {
+        "id": "india-vit-position-17",
+        "name": "Shah Rukh Khan"
+      }
+    },
+    "JP": [
+      {
+        "id": "japan-vit-position-0",
+        "name": "Lady Gaga"
+      },
+      {
+        "id": "japan-vit-position-1",
+        "name": "Neymar Jr. "
+      },
+      {
+        "id": "japan-vit-position-2",
+        "name": "Robert Downey Jr. "
+      },
+      {
+        "id": "japan-vit-position-3",
+        "name": "JK Rowling"
+      },
+      {
+        "id": "japan-vit-position-4",
+        "name": "Jared Leto"
+      },
+      {
+        "id": "japan-vit-position-5",
+        "name": "Claudia Leitte"
+      },
+      {
+        "id": "japan-vit-position-6",
+        "name": "Sachin Tendulkar"
+      },
+      {
+        "id": "japan-vit-position-7",
+        "name": "Cheryl Fernandez-Versini"
+      },
+      {
+        "id": "japan-vit-position-8",
+        "name": "Aaron Paul"
+      },
+      {
+        "id": "japan-vit-position-9",
+        "name": "Tim Howard"
+      },
+      {
+        "id": "japan-vit-position-10",
+        "name": "Eduardo Jorge"
+      },
+      {
+        "id": "japan-vit-position-11",
+        "name": "Gary Lineker"
+      },
+      {
+        "id": "japan-vit-position-12",
+        "name": "Glenda Kozlowsky"
+      },
+      {
+        "id": "japan-vit-position-13",
+        "name": "Henry Winter"
+      },
+      {
+        "id": "japan-vit-position-14",
+        "name": "The Duke of York"
+      },
+      {
+        "id": "japan-vit-position-15",
+        "name": "Priyanka Chopra"
+      },
+      {
+        "id": "japan-vit-position-16",
+        "name": "Amitabh Bachchan"
+      },
+      {
+        "id": "japan-vit-position-17",
+        "name": "Shah Rukh Khan"
+      }
+    ],
+    "GB": [
+      {
+        "id": "uk-vit-position-0",
+        "name": "JK Rowling"
+      },
+      {
+        "id": "uk-vit-position-1",
+        "name": "Sachin Tendulkar"
+      },
+      {
+        "id": "uk-vit-position-2",
+        "name": "Gary Lineker"
+      },
+      {
+        "id": "uk-vit-position-3",
+        "name": "Cheryl Fernandez-Versini"
+      },
+      {
+        "id": "uk-vit-position-4",
+        "name": "Henry Winter"
+      },
+      {
+        "id": "uk-vit-position-5",
+        "name": "Lady Gaga"
+      },
+      {
+        "id": "uk-vit-position-6",
+        "name": "The Duke of York"
+      },
+      {
+        "id": "uk-vit-position-7",
+        "name": "Robert Downey Jr. "
+      },
+      {
+        "id": "uk-vit-position-8",
+        "name": "Jared Leto"
+      },
+      {
+        "id": "uk-vit-position-9",
+        "name": "Tim Howard"
+      },
+      {
+        "id": "uk-vit-position-10",
+        "name": "Aaron Paul"
+      },
+      {
+        "id": "uk-vit-position-11",
+        "name": "Claudia Leitte"
+      },
+      {
+        "id": "uk-vit-position-12",
+        "name": "Eduardo Jorge"
+      },
+      {
+        "id": "uk-vit-position-13",
+        "name": "Glenda Kozlowsky"
+      },
+      {
+        "id": "uk-vit-position-14",
+        "name": "Neymar Jr. "
+      },
+      {
+        "id": "uk-vit-position-15",
+        "name": "Priyanka Chopra"
+      },
+      {
+        "id": "uk-vit-position-16",
+        "name": "Amitabh Bachchan"
+      },
+      {
+        "id": "uk-vit-position-17",
+        "name": "Shah Rukh Khan"
+      }
+    ]
+  },
+  "analyticsSettings": {
+    "google": {
+      "accounts": [
+        "UA-30775-44",
+        "UA-30775-62"
+      ],
+      "options": {
+        "customVars": {
+          "dimension2": "1"
+        },
+        "customUrl": "",
+        "trackerUrl": "https:\/\/ton-stg.smf1.twitter.com\/gazebo\/googleanalytics\/analytics.js",
+        "domains": [
+          "2014.local.twitter.com"
+        ],
+        "displayAdvertisingFeatures": true
+      }
+    },
+    "scribe": {
+      "client": "gazebo"
+    },
+    "trackingPixel": {
+      "pixel_ids": []
+    }
+  }
+}
